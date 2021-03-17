@@ -1,27 +1,55 @@
 .cover {
-    margin: 0;
-    height: 100vh;
-    background-image: url("../../assets/images/petervertesi_cover.jpg");
-    background-size: 100%;
-    background-size: cover;
+  margin: 0;
+  height: 100vh;
+  background-image: url("../../assets/images/petervertesi_cover.jpg");
+  background-size: 60%;
+  background-size: cover;
 }
 
 .introduction {
   margin: 0;
   color: #e7e6e1;
   font-family: 'Permanent Marker';
+  font-size: 7rem;
 }
 
 h1.introduction {
   position: absolute;
   top: 8rem;
   left: 2rem;
-  font-size: 8rem;
 }
 
 h2.introduction {
   position: absolute;
+  top: 8rem;
+  right: 2rem;
+}
+
+.about {
+  position: absolute;
   top: 20rem;
-  right: 4rem;
-  font-size: 6rem;
+  left: 2rem;
+  width: 30%;
+  color: #e7e6e1;
+  font-size: 1.5rem;
+}
+
+.about-h3, .content-h3 {
+  font-family: 'Permanent Marker';
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  position: absolute;
+  top: 20rem;
+  right: 2rem;
+  width: 30%;
+  color: #e7e6e1;
+  font-size: 1.5rem;
+}
+
+.content-button {
+  color: #e7e6e1;
+  font-size: 1.5rem;
 }
