@@ -1,0 +1,27 @@
+.cover {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../../assets/images/petervertesi_cover.jpg");
+    background-size: 100%;
+    background-size: cover;
+}
+
+.introduction {
+  margin: 0;
+  color: #e7e6e1;
+  font-family: 'Permanent Marker';
+}
+
+h1.introduction {
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+  font-size: 8rem;
+}
+
+h2.introduction {
+  position: absolute;
+  top: 20rem;
+  right: 4rem;
+  font-size: 6rem;
+}
