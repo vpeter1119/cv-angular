@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-cover',
@@ -10,6 +10,16 @@ export class CoverComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  coverOpacity = 0.5;
+
+  @HostListener('window:scroll', ['$event'])
+
+  onScroll() {
+    let verticalOffset = window.pageYOffset;
+    let innerHeight = window.innerHeight;
+    this.coverOpacity = 1-(verticalOffset / innerHeight);
   }
 
 }

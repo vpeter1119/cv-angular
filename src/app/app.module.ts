@@ -7,12 +7,14 @@ import { CoverComponent } from './cover/cover.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoverComponent
+    CoverComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
