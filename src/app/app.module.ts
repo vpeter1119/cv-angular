@@ -8,13 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { SkillsComponent } from './skills/skills.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CoverComponent,
-    SkillsComponent
+    SkillsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
