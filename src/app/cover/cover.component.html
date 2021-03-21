@@ -3,6 +3,25 @@
     <h1 class="introduction">Hi, I'm Peter</h1>
     <h1 class="introduction">Peter Vertesi</h1>
   </div>
+  <div class="content" fxLayout="row" fxLayoutAlign="center top" fxLayoutGap="30%" fxLayout.lt-md="column" fxLayoutAlign.lt-md="top center" fxLayoutGap.lt-md="10%" fxOffset.lt-md="50%">
+    <div class="about word-wrap" fxFlex="20%">
+      <h3 class="content-h3">About Me</h3>
+      <mat-list role="list" class="word-wrap">
+        <mat-list-item class="content-list-item" role="listitem"><mat-icon aria-hidden="false" aria-label="Born">child_care</mat-icon> Born in 1992-11-19, Debrecen, Hungary</mat-list-item>
+        <mat-list-item class="content-list-item" role="listitem"><mat-icon aria-hidden="false" aria-label="School">school</mat-icon> Studied International Relations and Law in Budapest</mat-list-item>
+      </mat-list>
+    </div>
+    <div class="skills" fxFlex="20%">
+      <h3 class="content-h3">Stuff I Can Do</h3>
+      <mat-list>
+        <mat-list-item role="listitem" *ngFor="let skill of skills">
+          <button mat-button>
+            <mat-icon aria-hidden="false" matListIcon>{{skill.icon}}</mat-icon> {{skill.title}}
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
 </div>
 <!--
 
