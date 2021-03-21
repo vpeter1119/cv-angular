@@ -1,0 +1,12 @@
+<div class="skills">
+  <mat-card *ngFor="let skill of skills" class="skill-card">
+    <img class="skill-card-image" src="assets/images/{{skill.image}}" alt="Photo of a Shiba Inu">
+    <mat-card-header>
+      <mat-card-title>{{skill.title}}</mat-card-title>
+      <mat-card-subtitle>{{skill.summary}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <!--{{skill.description}}-->
+    </mat-card-content>
+  </mat-card>
+</div>

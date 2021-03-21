@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Web Development",
+    "icon": "web",
+    "image": "webdev.jpg",
+    "summary": "Self-taught frontend developer."
+  },
+  {
+    "title": "Mapmaking",
+    "icon": "map",
+    "image": "map.jpg",
+    "summary": "Creating imaginary maps is my passion."
+  },
+  {
+    "title": "Technical Writing",
+    "icon": "text_snippet",
+    "image": "typewriter.jpg",
+    "summary": "Everything needs to be documented."
+  }
+]
