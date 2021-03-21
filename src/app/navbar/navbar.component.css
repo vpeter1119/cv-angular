@@ -1,0 +1,17 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+.mat-toolbar {
+  background-color: #222831;
+}
+
+.main-title {
+  font-family: 'Permanent Marker';
+  font-size: 2rem;
+}

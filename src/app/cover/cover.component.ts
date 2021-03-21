@@ -12,7 +12,7 @@ export class CoverComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  coverOpacity = 0.5;
+  coverOpacity = 1;
 
   @HostListener('window:scroll', ['$event'])
 
