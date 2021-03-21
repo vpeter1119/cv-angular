@@ -1,9 +1,9 @@
-<div id="skills" class="skills">
+<div id="skills" class="skills"  fxLayout="row" fxLayoutAlign="center top" fxLayoutGap="5%" fxLayout.lt-md="column" fxLayoutAlign.lt-md="top center" fxLayoutGap.lt-md="5%">
   <mat-card *ngFor="let skill of skills" class="skill-card">
     <img class="skill-card-image" src="assets/images/{{skill.image}}" alt="Photo of a Shiba Inu">
-    <mat-card-header>
+    <mat-card-header class="skill-card-header">
       <mat-card-title>{{skill.title}}</mat-card-title>
-      <mat-card-subtitle>{{skill.summary}}</mat-card-subtitle>
+      <mat-card-subtitle class="hover-only">{{skill.summary}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
       <!--{{skill.description}}-->

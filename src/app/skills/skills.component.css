@@ -5,14 +5,29 @@
 
 .skill-card {
   display: inline-block;
-  width: 28%;
   height: 40vh;
   overflow: hidden;
-  margin: 0 1%;
+  transition: all .3s;
+}
+
+.skill-card-header {
+  transition: all 0.3s;
+}
+
+.skill-card:hover > .skill-card-header {
+  transform: translateY(-100%)
 }
 
 .skill-card-image {
   overflow: hidden;
   height: 80%;
   width: 100%;
+  align-self: center;
+  object-fit: none;
+  object-position: center;
+  transition: all 0.3s;
+}
+
+.skill-card:hover > .skill-card-image {
+  opacity: 0.3;
 }
