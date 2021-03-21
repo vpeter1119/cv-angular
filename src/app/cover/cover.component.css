@@ -2,34 +2,43 @@
   margin: 0;
   height: 100vh;
   background-image: url("../../assets/images/petervertesi_cover.jpg");
-  background-size: 60%;
   background-size: cover;
+  background-position: center;
+}
+
+.introductions {
+  padding-top: 10%;
+}
+@media(max-width: 1279px) {
+  .introductions {
+    padding-top: 15%;
+  }
+}
+@media(max-width: 959 px) {
+  .introductions {
+    padding-top: 20%;
+  }
 }
 
 .introduction {
-  margin: 0;
   color: #e7e6e1;
   font-family: 'Permanent Marker';
-  font-size: 7rem;
+  font-size: 4.9rem;
 }
-
-h1.introduction {
-  position: absolute;
-  top: 10rem;
-  left: 2rem;
+@media(max-width: 1279px) {  
+  .introduction {
+    font-size: 3.5rem;
+  }
 }
-
-h2.introduction {
-  position: absolute;
-  top: 10rem;
-  right: 2rem;
+@media(max-width: 959px) {
+  .introduction {
+    font-size: 3rem;
+  }
 }
 
 .about {
-  position: absolute;
-  top: 20rem;
-  left: 2rem;
-  width: 30%;
+  margin-top: 20%;
+  margin-left: 2%;
   color: #e7e6e1;
   font-size: 1.5rem;
 }
@@ -41,10 +50,8 @@ h2.introduction {
 }
 
 .content {
-  position: absolute;
-  top: 20rem;
-  right: 2rem;
-  width: 30%;
+  margin-top: 20%;
+  margin-right: 2%;
   color: #e7e6e1;
   font-size: 1.5rem;
 }
