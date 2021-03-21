@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppMaterialsModule } from './app-materials.module';
 
 import { AppComponent } from './app.component';
@@ -16,12 +17,13 @@ import { DevelopmentDisclaimerComponent } from './development-disclaimer/develop
     CoverComponent,
     SkillsComponent,
     NavbarComponent,
-    DevelopmentDisclaimerComponent
+    DevelopmentDisclaimerComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppMaterialsModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
