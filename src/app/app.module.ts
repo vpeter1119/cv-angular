@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CoverComponent } from './cover/cover.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FeatureListComponent } from './feature-list/feature-list.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     CoverComponent,
     SkillsComponent,
-    NavbarComponent
+    NavbarComponent,
+    FeatureListComponent
   ],
   imports: [
     BrowserModule,
