@@ -1,26 +1,17 @@
 import { Injectable } from '@angular/core';
+import SkillsJson from '../../assets/data/skills.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
 
-  skills = [
-    {
-      title: 'Web Development',
-      icon: 'web',
-      summary: 'I can develop websites.'
-    },
-    {
-      title: 'Mapmaking',
-      icon: 'map',
-      summary: 'So nerdy...'
-    }
-  ]
+  skills = [];
 
   constructor() { }
 
   getSkills() {
+    this.skills = SkillsJson;
     return this.skills;
   }
 

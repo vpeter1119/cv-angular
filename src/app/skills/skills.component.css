@@ -2,3 +2,17 @@
   height: 100vh;
   padding: 30px 15%;  
 }
+
+.skill-card {
+  display: inline-block;
+  width: 28%;
+  height: 40vh;
+  overflow: hidden;
+  margin: 0 1%;
+}
+
+.skill-card-image {
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+}
