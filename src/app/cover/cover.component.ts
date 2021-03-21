@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { SkillsService } from '../skills/skills.service';
 
 @Component({
   selector: 'app-cover',
@@ -7,9 +8,14 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class CoverComponent implements OnInit {
 
-  constructor() { }
+  skills = [];
+
+  constructor(
+    private skillsService: SkillsService
+  ) { }
 
   ngOnInit(): void {
+    this.skills = this.skillsService.getSkills();
   }
 
   coverOpacity = 1;

@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { SkillsService } from '../skills/skills.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +8,16 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  skills = [];
+
+  constructor(
+    private skillsService: SkillsService 
+  ) { }
 
   navbarOpacity = 0;
 
   ngOnInit(): void {
+    this.skills = this.skillsService.getSkills();
   }
 
   @HostListener('window:scroll', ['$event'])
