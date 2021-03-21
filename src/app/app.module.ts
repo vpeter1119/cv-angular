@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CoverComponent } from './cover/cover.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DevelopmentDisclaimerComponent } from './development-disclaimer/development-disclaimer.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     CoverComponent,
     SkillsComponent,
     NavbarComponent,
+    DevelopmentDisclaimerComponent
   ],
   imports: [
     BrowserModule,
