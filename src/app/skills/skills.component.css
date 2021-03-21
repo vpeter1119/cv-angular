@@ -1,5 +1,5 @@
 .skills {
-  height: 100vh;
+  height: 95vh;
   padding: 30px 15%;  
 }
 
@@ -14,8 +14,28 @@
   transition: all 0.3s;
 }
 
-.skill-card:hover > .skill-card-header {
-  transform: translateY(-100%)
+.skill-card:hover {
+  cursor: pointer;
+}
+
+.skill-card-title {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  position: relative;
+  top: 1rem;
+}
+
+.skill-card-subtitle {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.skill-card:hover .skill-card-title {
+  transform: translateY(-250%)
+}
+
+.skill-card:hover .skill-card-subtitle {
+  opacity: 1;
 }
 
 .skill-card-image {
